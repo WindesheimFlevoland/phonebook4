@@ -21,11 +21,11 @@ session_start();
 
             if (isset($_SESSION['phonebook'])) {
                 $phonebook = unserialize($_SESSION['phonebook']);
-
+                echo '<table>';
                 foreach ($phonebook as $person) {
-                    echo $person->getName() . ' heeft telefoon nummer ' . $person->getPhonenumber() . "<br/>";
+                    echo "<tr><td>".$person->getName() . "</td><td>" . $person->getPhonenumber() . "</td></tr>";
                 }
-
+                echo '</table>';    
                 echo '</br>'; // extra lege regel
             }
             ?>
