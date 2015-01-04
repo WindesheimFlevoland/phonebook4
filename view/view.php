@@ -23,7 +23,7 @@ session_start();
                 $phonebook = unserialize($_SESSION['phonebook']);
 
                 foreach ($phonebook as $person) {
-                    echo " <a>Edit</a> <a>Delete</a> ".$person->getName() . ' heeft telefoon nummer ' . $person->getPhonenumber() . "<br/>";
+                    echo $person->getName() . ' heeft telefoon nummer ' . $person->getPhonenumber() . "<br/>";
                 }
 
                 echo '</br>'; // extra lege regel
