@@ -1,0 +1,16 @@
+/* 
+    Document   : stylesheet
+    Created on : 15-nov-2012, 7:41:19
+    Author     : 
+    Description: Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+div {
+    position:relative;
+    top:80px;
+    left:80px;
+}
+
